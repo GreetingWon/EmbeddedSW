@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/my_prt_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개꿂잼 숫자야구" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<!--    <EditText-->
+<!--        android:id="@+id/my_prt_value"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text=" " >-->
+<!--    </EditText>-->
+        <EditText
+            android:id="@+id/Test_Num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 " >
+        </EditText>
+
+        <EditText
+            android:id="@+id/show_df"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="난이도 : " >
+        </EditText>
+        <TextView
+            android:id="@+id/show_difficulty"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="" />
+
+    </LinearLayout>
+
+
+    <!---  1회표현  -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/get_value1_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1회 : " />
+    <EditText
+        android:id="@+id/get_value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text=" " >
+    </EditText>
+        <TextView
+            android:id="@+id/Strike_Zone_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S : " />
+        <EditText
+            android:id="@+id/Strike_Zone_String_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Ball_Zone_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B : " />
+        <EditText
+            android:id="@+id/Ball_Zone_String_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Out_Zone_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUT : " />
+        <EditText
+            android:id="@+id/Out_Zone_String_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+    </LinearLayout>
+
+    <!---  2회표현  -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/get_value2_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2회 : " />
+        <EditText
+            android:id="@+id/get_value2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Strike_Zone_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S : " />
+        <EditText
+            android:id="@+id/Strike_Zone_String_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Ball_Zone_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B : " />
+        <EditText
+            android:id="@+id/Ball_Zone_String_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Out_Zone_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUT : " />
+        <EditText
+            android:id="@+id/Out_Zone_String_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+    </LinearLayout>
+
+    <!---  3회표현  -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/get_value3_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3회 : " />
+        <EditText
+            android:id="@+id/get_value3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Strike_Zone_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S : " />
+        <EditText
+            android:id="@+id/Strike_Zone_String_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Ball_Zone_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B : " />
+        <EditText
+            android:id="@+id/Ball_Zone_String_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Out_Zone_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUT : " />
+        <EditText
+            android:id="@+id/Out_Zone_String_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+    </LinearLayout>
+
+    <!---  4회표현  -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/get_value4_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4회 : " />
+        <EditText
+            android:id="@+id/get_value4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Strike_Zone_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S : " />
+        <EditText
+            android:id="@+id/Strike_Zone_String_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Ball_Zone_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B : " />
+        <EditText
+            android:id="@+id/Ball_Zone_String_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Out_Zone_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUT : " />
+        <EditText
+            android:id="@+id/Out_Zone_String_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+    </LinearLayout>
+
+    <!---  5회표현  -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/get_value5_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5회 : " />
+        <EditText
+            android:id="@+id/get_value5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Strike_Zone_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S : " />
+        <EditText
+            android:id="@+id/Strike_Zone_String_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Ball_Zone_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B : " />
+        <EditText
+            android:id="@+id/Ball_Zone_String_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Out_Zone_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUT : " />
+        <EditText
+            android:id="@+id/Out_Zone_String_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+    </LinearLayout>
+
+    <!---  6회표현  -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/get_value6_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6회 : " />
+        <EditText
+            android:id="@+id/get_value6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Strike_Zone_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S : " />
+        <EditText
+            android:id="@+id/Strike_Zone_String_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Ball_Zone_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B : " />
+        <EditText
+            android:id="@+id/Ball_Zone_String_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Out_Zone_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUT : " />
+        <EditText
+            android:id="@+id/Out_Zone_String_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+    </LinearLayout>
+
+    <!---  7회표현  -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/get_value7_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7회 : " />
+        <EditText
+            android:id="@+id/get_value7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Strike_Zone_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S : " />
+        <EditText
+            android:id="@+id/Strike_Zone_String_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Ball_Zone_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B : " />
+        <EditText
+            android:id="@+id/Ball_Zone_String_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Out_Zone_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUT : " />
+        <EditText
+            android:id="@+id/Out_Zone_String_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+    </LinearLayout>
+
+
+    <!---  8회표현  -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/get_value8_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8회 : " />
+        <EditText
+            android:id="@+id/get_value8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Strike_Zone_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S : " />
+        <EditText
+            android:id="@+id/Strike_Zone_String_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Ball_Zone_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B : " />
+        <EditText
+            android:id="@+id/Ball_Zone_String_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+        <TextView
+            android:id="@+id/Out_Zone_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUT : " />
+        <EditText
+            android:id="@+id/Out_Zone_String_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " >
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

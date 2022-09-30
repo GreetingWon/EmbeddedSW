@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/human2"
+    android:layout_marginBottom="200dp"
+    tools:context=".FirstActivity">
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:src="@drawable/human2" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:text="노인과 아이를 위한 \n게임아카데미 (임베디드SW)"
+        android:textSize="28sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:text="엄두식 . 원성민 . 임주현"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:checked="false"
+                android:background="#ffffff"
+                android:text="숫자야구" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:checked="false"
+                android:background="#ffffff"
+                android:text="Memory Museum" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/Game_Select"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@drawable/tv_solid_rect"
+            android:text="게임선택" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:checked="false"
+                android:background="#ffffff"
+                android:text="일반" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:checked="false"
+                android:background="#ffffff"
+                android:text="심화" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/Difficulty_Select"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@drawable/tv_solid_rect"
+            android:text="난이도선택" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Open" />
+
+</LinearLayout>
